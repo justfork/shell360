@@ -298,12 +298,16 @@ export default function Sftp({ host }: SftpProps) {
         sx={{
           '.MuiDialog-paper': {
             maxWidth: 880,
-            paddingTop: 'env(safe-area-inset-top)',
-            paddingBottom: 'env(safe-area-inset-bottom)',
           },
         }}
       >
-        <AppBar position="static">
+        <AppBar
+          position="static"
+          sx={{
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+          }}
+        >
           <Toolbar>
             <Typography
               sx={{
